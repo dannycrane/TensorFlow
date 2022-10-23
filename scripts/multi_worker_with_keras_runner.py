@@ -1,6 +1,7 @@
 import sys
 import os
 import threading
+import numpy
 
 
 node_str = sys.stdin.read().replace("\n","")
@@ -10,7 +11,7 @@ node_string = ""
 for node in nodes:
     if not first:
         node_string += ','
-    node_string += '"' + node + ':12345"'
+    node_string += '"' + node + ':123456"'
     first = False
 
 for i, node in enumerate(nodes):
